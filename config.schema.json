@@ -85,6 +85,12 @@
                     ]
                   },
                   {
+                    "title": "Simple Heater with LED On/Off",
+                    "enum": [
+                      "SimpleHeaterLight"
+                    ]
+                  },
+                  {
                     "title": "Garage Door",
                     "enum": [
                       "GarageDoor"
@@ -410,21 +416,21 @@
                 "type": "integer",
                 "placeholder": "1",
                 "condition": {
-                  "functionBody": "return model.devices && model.devices[arrayIndices] && ['SimpleHeater'].includes(model.devices[arrayIndices].type);"
+                  "functionBody": "return model.devices && model.devices[arrayIndices] && ['SimpleHeater','SimpleHeaterLight'].includes(model.devices[arrayIndices].type);"
                 }
               },
               "thresholdTemperatureDivisor": {
                 "type": "integer",
                 "placeholder": "1",
                 "condition": {
-                  "functionBody": "return model.devices && model.devices[arrayIndices] && ['SimpleHeater'].includes(model.devices[arrayIndices].type);"
+                  "functionBody": "return model.devices && model.devices[arrayIndices] && ['SimpleHeater','SimpleHeaterLight'].includes(model.devices[arrayIndices].type);"
                 }
               },
               "targetTemperatureDivisor": {
                 "type": "integer",
                 "placeholder": "1",
                 "condition": {
-                  "functionBody": "return model.devices && model.devices[arrayIndices] && ['SimpleHeater'].includes(model.devices[arrayIndices].type);"
+                  "functionBody": "return model.devices && model.devices[arrayIndices] && ['SimpleHeater','SimpleHeaterLight'].includes(model.devices[arrayIndices].type);"
                 }
               },
               "dpAction": {
