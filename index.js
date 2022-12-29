@@ -25,8 +25,8 @@ const SwitchAccessory = require('./lib/SwitchAccessory');
 const ValveAccessory = require('./lib/ValveAccessory');
 const OilDiffuserAccessory = require('./lib/OilDiffuserAccessory');
 
-const PLUGIN_NAME = 'homebridge-tuya-lan';
-const PLATFORM_NAME = 'TuyaLan';
+const PLUGIN_NAME = 'homebridge-tuya-PD';
+const PLATFORM_NAME = 'TuyaLanPD';
 
 const CLASS_DEF = {
     outlet: OutletAccessory,
